@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">KnozenLocationRendering</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_show_map">ShowMap</string>
+    <string name="API_KEY">AIzaSyDJOaA3DfmCUnNipb-qaPdhasWha8mNHFk</string>
+    <string name="No_Connect">No Internet Connection</string>
+    <string name="Retry">Tap to Retry</string>
+
+</resources>

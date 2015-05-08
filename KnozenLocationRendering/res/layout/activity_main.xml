@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+	
+    <Switch
+        android:id="@+id/mySwitch"
+        android:layout_below="@+id/switchStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+    
+    <TextView
+        android:id="@+id/switchStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+	<RelativeLayout
+    	android:id="@+id/contentLayoutId1"
+        android:layout_below="@+id/mySwitch"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+	    <ListView
+        	android:id="@+id/list"
+        	android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"/>
+	    	
+    </RelativeLayout>
+    
+	<RelativeLayout
+    	android:id="@+id/contentLayoutId2"
+    	android:layout_below="@+id/mySwitch"
+    	android:layout_marginTop="10dp"
+    	android:orientation="vertical"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:visibility="gone">
+	
+	    <fragment
+	        android:id="@+id/map"
+    		class="com.google.android.gms.maps.SupportMapFragment"
+    		android:layout_width="match_parent"
+    		android:layout_height="match_parent"/>
+	    
+	</RelativeLayout>
+	
+	<RelativeLayout
+    	android:id="@+id/contentLayoutId3"
+    	android:layout_below="@+id/mySwitch"
+    	android:layout_marginTop="10dp"
+    	android:orientation="vertical"
+    	android:layout_width="match_parent"
+    	android:layout_height="fill_parent"
+    	android:visibility="gone"
+    	android:clickable="true">
+	
+	    <TextView
+        	android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/No_Connect"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+            
+        <TextView
+			android:id="@+id/text3"
+			android:layout_below="@+id/text2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+            android:text="@string/Retry"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+	    
+	</RelativeLayout>
+ 	
+</RelativeLayout>
